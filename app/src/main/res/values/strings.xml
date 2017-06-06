@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mulligans Grocers</string>
+    <string name="intro">For the finest in organic fresh fruit and veg. Farm fresh, right on your doorstep.</string>
+    <string name="email">mulligansgrocers@gmail.com</string>
+    <string name="phone">01&#8211;235&#8211;5659\n086&#8211;4565995</string>
+    <string name="opening_hours">Mon-Sat: 7am-7pm\nSun: 10am-5pm</string>
+    <string name="follow">Follow and like us on:</string>
+    <string name="address" translatable="false">99 Abbey Street Lower, North City, Dublin 1</string>
+
+    <!--Adding content descriptions for images-->
+    <string name="twitter_icon">Click to follow us on twitter.</string>
+    <string name="instagram_icon">Click to follow us on Instagram.</string>
+    <string name="facebook_icon">Engage with us on Facebook.</string>
+    <string name="calendar_icon">See our open hours here.</string>
+    <string name="email_icon">Contact us via email here.</string>
+    <string name="phone_icon">Call us via phone here.</string>
+    <string name="map_pin">Our location.</string>
+</resources>

@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:gravity">center</item>
+        <item name="height">@dimen/app_bar_height</item>
+        <item name="android:height">@dimen/app_bar_height</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/app_bar_text_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--The style for most of the text throughout the app-->
+    <style name="TextStandard">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:layout_margin">@dimen/text_margin</item>
+        <item name="android:paddingBottom">@dimen/text_margin</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/icon_padding</item>
+    </style>
+
+    <!--The introduction text style-->
+    <style name="TextIntro" parent="TextBoldStandard">
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:layout_marginTop">@dimen/header_text_margin_top</item>
+        <item name="android:paddingTop">@dimen/header_text_margin_top</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--A bold version of the standard text-->
+    <style name="TextBoldStandard" parent="TextStandard">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_margin">@dimen/icon_margin</item>
+        <item name="android:layout_width">@dimen/icon_dimen</item>
+        <item name="android:layout_height">@dimen/icon_dimen</item>
+    </style>
+
+    <style name="LinearLayoutMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutHorizontal" parent="LinearLayoutMain">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>
+

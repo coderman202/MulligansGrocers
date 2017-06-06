@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutHorizontal"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/follow"
+        android:layout_width="wrap_content"
+        style="@style/TextBoldStandard"
+        android:text="@string/follow" />
+
+    <ImageView
+        android:id="@+id/twit"
+        style="@style/Icon"
+        android:contentDescription="@string/twitter_icon"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/fb"
+        style="@style/Icon"
+        android:contentDescription="@string/facebook_icon"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/insta"
+        style="@style/Icon"
+        android:contentDescription="@string/instagram_icon"
+        android:src="@drawable/instagram" />
+</LinearLayout>
