@@ -1,77 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.mulligansgrocers.MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        style="@style/TextIntro"
-        android:id="@+id/intro"
-        android:text="@string/intro"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/opening_hours"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        style="@style/TextStandard"
-        android:id="@+id/opening_hours"
-        android:text="@string/opening_hours"
-        android:drawableStart="@drawable/calendar"
-        android:contentDescription="@string/calendar_icon"
-        app:layout_constraintTop_toBottomOf="@id/intro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/phone" />
-
-
-    <TextView
-        style="@style/TextStandard"
-        android:id="@+id/phone"
-        android:text="@string/phone"
-        android:drawableStart="@drawable/phone"
-        android:contentDescription="@string/phone_icon"
-        app:layout_constraintTop_toBottomOf="@id/intro"
-        app:layout_constraintStart_toEndOf="@id/opening_hours"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/email" />
-
-
-    <TextView
-        style="@style/TextStandard"
-        android:id="@+id/email"
-        android:text="@string/email"
-        android:drawableStart="@drawable/email"
-        android:contentDescription="@string/email_icon"
-        app:layout_constraintTop_toBottomOf="@id/phone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/address" />
-
-    <TextView
-        style="@style/TextStandard"
-        android:id="@+id/address"
-        android:text="@string/address"
-        android:drawableStart="@drawable/map_marker"
-        android:contentDescription="@string/map_pin"
-        app:layout_constraintTop_toBottomOf="@id/email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/social" />
-
-
-    <include
-        layout="@layout/social_media_buttons"
-        android:id="@+id/social"
-        android:layout_below="@id/address"
-        android:layout_width="0dp"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/address"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        tools:context="com.example.android.mulligansgrocers.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            style="@style/TextIntro"
+            android:id="@+id/intro"
+            android:text="@string/intro"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/opening_hours"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            style="@style/TextStandard"
+            android:id="@+id/opening_hours"
+            android:text="@string/opening_hours"
+            android:drawableStart="@drawable/calendar"
+            android:contentDescription="@string/calendar_icon"
+            app:layout_constraintTop_toBottomOf="@id/intro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/phone" />
+
+
+        <TextView
+            style="@style/TextStandard"
+            android:id="@+id/phone"
+            android:text="@string/phone"
+            android:drawableStart="@drawable/phone"
+            android:contentDescription="@string/phone_icon"
+            app:layout_constraintTop_toBottomOf="@id/intro"
+            app:layout_constraintStart_toEndOf="@id/opening_hours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/email" />
+
+
+        <TextView
+            style="@style/TextStandard"
+            android:id="@+id/email"
+            android:text="@string/email"
+            android:drawableStart="@drawable/email"
+            android:contentDescription="@string/email_icon"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/address" />
+
+        <TextView
+            style="@style/TextStandard"
+            android:id="@+id/address"
+            android:text="@string/address"
+            android:drawableStart="@drawable/map_marker"
+            android:contentDescription="@string/map_pin"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/social" />
+
+
+        <include
+            layout="@layout/social_media_buttons"
+            android:id="@+id/social"
+            android:layout_below="@id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
