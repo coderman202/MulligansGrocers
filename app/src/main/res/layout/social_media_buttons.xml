@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutHorizontal"
     tools:showIn="@layout/activity_main">
@@ -14,17 +15,17 @@
         android:id="@+id/twit"
         style="@style/Icon"
         android:contentDescription="@string/twitter_icon"
-        android:src="@drawable/twitter" />
+        app:srcCompat="@drawable/twitter" />
 
     <ImageView
         android:id="@+id/fb"
         style="@style/Icon"
         android:contentDescription="@string/facebook_icon"
-        android:src="@drawable/facebook" />
+        app:srcCompat="@drawable/facebook" />
 
     <ImageView
         android:id="@+id/insta"
         style="@style/Icon"
         android:contentDescription="@string/instagram_icon"
-        android:src="@drawable/instagram" />
+        app:srcCompat="@drawable/instagram" />
 </LinearLayout>
